@@ -27,7 +27,7 @@ public class PrintProduct extends HttpServlet {
         product.add("Lamp");
         PrintWriter printWriter = response.getWriter();
         printWriter.write("<h1>Our products</h1>");
-        for (int i = 0; i < product.size()-1; i++)
+        for (int i = 0; i < product.size(); i++)
             printWriter.write("<table><tr><td><th>" + product.get(i) + "</th></td></tr></table>");
 
 
